@@ -1,0 +1,417 @@
+@charset "utf-8";
+body{margin:0px; font-family:sans-serif;}
+.page-header{
+    background-color:mediumaquamarine;
+    color:#fff;
+    /* text-align:center; */
+    height:auto;width:auto;
+    margin: 0px;
+    padding:20px 40px;
+    font-weight: bold;
+    font-size: 150%;
+    text-shadow:2px 3px 5px #124c36;
+}
+
+.article{padding:30px}
+.article-header{
+    vertical-align: center;
+    background-color:rgb(202, 246, 231);
+    border-top:10px solid;
+    border-image:linear-gradient(to left,mediumaquamarine,rgb(37, 126, 97));
+    border-image-slice: 1;
+    padding:10px 50px;
+    text-align:left;
+}
+.filter-zone {
+    background: #a7c3d3;
+    border-radius: 10px;
+    max-width:75%;
+    width: auto;
+    margin:auto;
+    padding-bottom:10px;
+}
+.filter-zone-title {
+    display: flex;
+    color:#062f51;
+    flex-wrap: wrap;
+    align-items: evenly;
+    padding: 10px 3px 0px 3px;
+    width: auto;
+}
+.container{
+    display:flex;
+    padding:10px;
+    float: right;
+}
+.clearlabel {
+    background: #edeeef;
+    border: 1.5px solid  #062f51;
+    border-radius: 5px;
+    float: right;
+    padding: 5px 9px;
+    font-size:80%;
+    margin-left:auto; 
+    margin-right:1em;
+}
+
+.check.close-filter{
+    background: #edeeef;
+    font-size:80%;
+    font-weight:normal;
+    border-radius: 5px;
+    border: 1.5px solid #062f51;
+    margin-left:auto;
+}
+.check.close-filter.active{margin-bottom:0px;}
+
+.check-title{
+    font-weight: bold;
+    color:#062f51;
+    margin:5px 0px 5px 0px;
+}
+
+hr{
+    border: none;
+    border-bottom: 2px solid #b5ccdf;
+    margin: 10px;
+}
+.filterimg{vertical-align:middle;
+}
+.filterlabel img{
+    height:auto;
+    object-fit: cover;
+    width:3em;
+}
+
+.check {
+    background:#e8e8e8;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+    display: inline;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.check.active {background: #fff;}
+.check-content {display: none;}
+.check-content.show {
+    display: block;
+    background: #fff;
+    padding: 0px;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: 8px;
+    max-height: 400px;
+    overflow: auto;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width:auto;
+}
+
+.check-content0{padding:15px;}
+.check-content {display: none;}
+
+input.filter{display: none;}
+
+.filterlabel ,.filterlabel {
+    background: #fff;
+    vertical-align: middle;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 80%;
+    text-align: center;
+    padding: 4px 6.5px;
+    min-width: 30px;
+    height: 1.5em;
+    margin: 0.25em 0.05em;
+}
+input.filter:checked + .filterlabel {
+    background: #bfd8eb;
+    border: 1.2px solid #2177bc;
+    font-weight: bold;
+}
+
+
+/* 条件に合致しないフォトを非表示にする機能 */
+.hidden  tr:not(.listtitle) {display: none;}
+.result tr.last {display: table-row;}
+
+table {
+    max-width:75%;
+    width: auto;
+    border-collapse: collapse;
+    font-size: 80%;
+    margin:auto;
+    margin-top: 30px;
+}
+th {
+    cursor: pointer;
+    /* position: relative; */
+    background-color:#043c78;
+    color:#fafdff;
+    border: 1px solid #ccc;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    height:30px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.listtitle{
+    overflow:auto;
+
+}
+/* .cursor{
+    position: relative;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fafdff;
+
+} */
+.pokemonimg {
+    margin:auto;
+    margin-top:5px;
+    display:block;
+}
+tr {white-space:nowrap;}
+td {
+    text-align: center;
+    border: 1px solid #ccc;
+}
+footer{
+    background:linear-gradient(to right,#b1c9e3,#dceaf8);
+    border-top:10px solid;
+    border-image:linear-gradient(to left,#97bee7, #043c78);
+    border-image-slice: 1;
+    padding:30px;
+    width:auto;
+    /* height:  */
+    text-align:center;
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+}
+.pagefooter-text{font-size:80%;}
+li{list-style:none}
+.precaution{font-size:70%;margin:auto;
+}
+
+#page-top a{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background:#043c78;
+    font-weight:bold;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase; 
+    text-decoration: none;
+    font-size:0.6rem;
+    transition:all 0.3s;
+  }
+  
+  #page-top a:hover{
+    background: #777;
+  }
+  
+  /*リンクを右下に固定*/
+  #page-top {
+    position: fixed;
+    right: 10px;
+    bottom:10px;
+    z-index: 2;
+      /*はじめは非表示*/
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  
+  /*　上に上がる動き　*/
+  
+  #page-top.UpMove{
+    animation: UpAnime 0.5s forwards;
+  }
+  @keyframes UpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+  
+  /*　下に下がる動き　*/
+  
+  #page-top.DownMove{
+    animation: DownAnime 0.5s forwards;
+  }
+  @keyframes DownAnime{
+    from {
+      opacity: 1;
+    transform: translateY(0);
+    }
+    to {
+      opacity: 1;
+    transform: translateY(100px);
+    }
+  }
+  
+  /*========= レイアウトのためのCSS ===============*/
+  
+  h1{
+    font-size:1.2rem;
+  }
+  
+  h2{
+    font-size:1.2rem;
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+  
+  p{
+    margin-top:20px;  
+  }
+  
+  small{
+    background:#333;
+    color:#fff;
+    display: block;
+    text-align: center;
+    padding:20px;
+  }
+  
+  #header{
+    background:#333;
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  section{
+    padding:100px 30px;
+  }
+  
+  section:nth-child(2n){
+    background:#f3f3f3; 
+  }
+  
+  #footer{
+    position: relative;
+    z-index: 2;
+  }
+
+
+@media (max-width: 767px) { 
+    *{font-size:10px;}
+    .page-header{
+        padding:10px;
+        font-weight: bold;
+        font-size: 150%;
+        text-shadow:2px 3px 5px #124c36;
+    }
+    .article{margin-top:10px;
+        padding:3px;
+    }
+    
+    .article-header{
+        border-top:5px solid;
+        padding:10px;
+    }
+
+    .filter-zone {
+        border-radius: 10px;
+        max-width:100%;
+        margin-bottom:10px;
+        width: 100%;
+        padding-bottom:5px;
+    }
+    .filter-zone-title {
+        padding: 10px 3px 0px 3px;
+        width: auto;
+    }
+    .container{
+        padding:7px;
+    }
+    .clearlabel {
+        padding: 3px;
+        font-size:80%;
+    }
+
+    hr{
+        margin: 5px;
+    }
+
+    .check {
+        padding: 3px;
+        margin-left: 5px;
+        margin-right: 2px;
+    }
+    .check-content.show {
+        max-height: 200px;
+    }
+
+    .check-content0{padding:10px;}
+
+    .filterlabel ,.filterlabel {
+    font-size: 60%;
+    padding: 3px 6px;
+    height: 2.5em;
+    }
+    tbody{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    table {
+        max-width:100%;
+        width: auto;
+        font-size: 80%;
+        margin: auto;
+        display:flex;
+        margin-left:5px;
+
+    }
+    th {
+        display:none;
+    }
+    .pokemonimg {
+        height:50px;
+        width:50px;
+        margin:1px;
+    }
+    tr {margin:3px;
+        }
+
+    td {
+      display:inline-block;
+        border:none;
+        word-wrap: break-word;
+        margin:0px;
+    }
+    .onlyPCtext{
+       display:none;
+       border:none;
+    }
+    footer{
+        border-top:5px solid;
+        padding:0px;
+        margin:0px;
+        height:auto;
+        position: absolute;/*←絶対位置*/
+        bottom: 0; /*下に固定*/
+    }
+    .pagefooter-text{font-size:80%;}
+    li{list-style:none}
+    .precaution{font-size:70%; margin:auto;
+    text-align:center;
+    padding:10px;
+    }
+ }
