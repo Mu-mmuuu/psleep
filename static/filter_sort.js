@@ -72,8 +72,8 @@ function goFilter(){
         part01:{ //フォト情報
             type: ["normal","fire","water","electric","grass","ice","fighting","poison","ground","flying","psychic","bug","rock","ghost","dragon","dark","steel","fairy"],
             good: ["berry","food","skill"],
-            food: ["egg","apple","herbs","meat","milk","honey","oil","ginger","tomato","cacao","soy"],
-            skill: ["energys","energym","dreamget","yells","charges","alls","support","foods","cookings","random"],
+            pokemonfood: ["egg","apple","herbs","meat","milk","honey","oil","ginger","tomato","cacao","soy"],
+            pokemonskill: ["energys","energym","dreamget","yells","charges","alls","support","foods","cookings","random"],
         },
         part02:{ //セット
             unit: ["Jupiter","drasta","Altessimo","Beit","W","FRAME","sai","HighJoker","shinsoku","CafeParade","mofu","SEM","kogado","F-LAGS","Legenders","CFIRST"],

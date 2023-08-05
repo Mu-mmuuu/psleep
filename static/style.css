@@ -75,12 +75,11 @@ hr{
     border-bottom: 2px solid #b5ccdf;
     margin: 10px;
 }
-.filterimg{vertical-align:middle;
-}
+
 .filterlabel img{
-    height:auto;
-    object-fit: cover;
-    width:3em;
+    height:2em;
+    object-fit: contain;
+    vertical-align: middle;
 }
 
 .check {
