@@ -22,7 +22,7 @@ function changeTab() {
 }
 function clearall() {
     document.typefilter.reset();
-    document.idolfilter.reset();
+    // document.idolfilter.reset();
     goFilter();
 }
 
@@ -75,10 +75,10 @@ function goFilter(){
             pokemonfood: ["egg","apple","herbs","meat","milk","honey","oil","ginger","tomato","cacao","soy"],
             pokemonskill: ["energys","energym","dreamget","yells","charges","alls","support","foods","cookings","random"],
         },
-        part02:{ //セット
-            unit: ["Jupiter","drasta","Altessimo","Beit","W","FRAME","sai","HighJoker","shinsoku","CafeParade","mofu","SEM","kogado","F-LAGS","Legenders","CFIRST"],
-            idol: ['No_1','No_2','No_3','No_4','No_5','No_6','No_7','No_8','No_9','No_10','No_11','No_12','No_13','No_14','No_15','No_16','No_17','No_18','No_19','No_20','No_21','No_22','No_23','No_24','No_25','No_26','No_27','No_28','No_29','No_30','No_31','No_32','No_33','No_34','No_35','No_36','No_37','No_38','No_39','No_40','No_41','No_42','No_43','No_44','No_45','No_46','No_47','No_48','No_49']
-        }
+        // part02:{ //セット
+        //     unit: ["Jupiter","drasta","Altessimo","Beit","W","FRAME","sai","HighJoker","shinsoku","CafeParade","mofu","SEM","kogado","F-LAGS","Legenders","CFIRST"],
+        //     idol: ['No_1','No_2','No_3','No_4','No_5','No_6','No_7','No_8','No_9','No_10','No_11','No_12','No_13','No_14','No_15','No_16','No_17','No_18','No_19','No_20','No_21','No_22','No_23','No_24','No_25','No_26','No_27','No_28','No_29','No_30','No_31','No_32','No_33','No_34','No_35','No_36','No_37','No_38','No_39','No_40','No_41','No_42','No_43','No_44','No_45','No_46','No_47','No_48','No_49']
+        // }
     };
 
     var wTable = ("#pokemonlist");
